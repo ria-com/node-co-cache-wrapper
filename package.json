@@ -1,0 +1,30 @@
+{
+  "name": "co-cache-wrapper",
+  "version": "0.1.5",
+  "description": "Wrap to cacher's all methods of target object. Now support co-cacher & cacher-promise",
+  "author": {
+    "name": "Oleg Cherniy",
+    "email": "oleg.cherniy@gmail.com"
+  },
+  "directories": {
+    "test": "./test"
+  },
+  "dependencies": {
+    "config": "*",
+    "co": "*",
+    "co-wait": "*",
+    "q": "*",
+    "co-cacher": "*",
+    "cacher-promise": "*"
+  },
+  "devDependencies": {
+    "jasmine-node": "*"
+  },
+  "scripts": {
+    "start": "node --harmony index.js",
+    "test": "node --harmony ./node_modules/jasmine-node/lib/jasmine-node/cli.js spec"
+  },
+  "engines": {
+    "node": ">=0.11.x"
+  }
+}
