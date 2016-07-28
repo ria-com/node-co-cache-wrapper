@@ -49,9 +49,9 @@ var myObject = {
 };
 
 var myWrappedObject = wrapper(myObject,180,{cacherType: 'promise'}); // Cache all methods on 3 min
-myWrappedObject.sum(7,2).done(function(value){
+myWrappedObject.sum(7,2).then(function(value){
     console.log(value);
-    myWrappedObject.hello("Oleg!").done(function(value){
+    myWrappedObject.hello("Oleg!").then(function(value){
         console.log(value);
     });
 });
